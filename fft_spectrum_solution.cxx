@@ -58,7 +58,7 @@ void writeData(const fftw_complex* const f, const int N, const double T,const ch
 
 	for(int i=0; i<=N/2; i++){
 		pk = sqrt(f[i][0]*f[i][0] + f[i][1]*f[i][1])/N;
-		out << i*dk << "\t" << pk << "\t" << f[i][0] << "\t" << f[i][1] << endl;
+		out << i*dOm << "\t" << pk << "\t" << f[i][0] << "\t" << f[i][1] << endl;
 	}
 	out.close();
 }
